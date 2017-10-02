@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XZRT Robot Website</title>
+    <link rel="stylesheet" type="text/css" href="../styles/publicStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styles/navigation.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="../styles/contentPage.css">
+    <link rel="stylesheet" type="text/css" href="../styles/techPage.css">
+    <script type="text/javascript" src="../scripts/jquery.js" defer></script>
+    <script type="text/javascript" src="../scripts/publicScript.js" defer></script>
+    <script type="text/javascript" src="../scripts/contentPage.js" defer></script>
+</head>
+<body>
+<nav>
+    <div id="navLeft">
+        <a id="logo" href="../index.html">
+            <img alt="logo" src="../images/logo.svg">
+            <span>XZRT Robot</span>
+        </a>
+        <ul id="nav_options">
+            <li><a href="../news.html">News</a></li>
+            <li><a href="../races.html">Races</a></li>
+            <li><a href="../tech.html">Tech</a></li>
+            <li><a href="../join.html">Join us</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="headGalleryContainer" id="headGalleryContainer">
+        <div class="headGallery scrollblock" id="headGallery"></div>
+    </div>
+    <!-- make the a gallery on the top -->
+    <!-- main content -->
+    <div class="contentBody scrollblock" id="contentBody">
+        <h1 class="contentHeader light">XControl</h1>
+        <div class="contentInfoContainer">
+            <div class="contentInfoLeft">
+                <div class="contentInfo">
+                    <img alt="icoDate" src="../images/icoDate.svg">
+                    <span>11/23 2016 9:55</span>
+                </div>
+                <div class="contentInfo">
+                    <img alt="icoAuther" src="../images/icoAuther.svg">
+                    <span>Hao Wang</span>
+                </div>
+            </div>
+            <div class="contentInfoRight">
+                <div class="contentInfo" id="btnPrint">
+                    <img alt="icoPrint" src="../images/icoPrint.svg">
+                    <span>Print</span>
+                </div>
+            </div>
+        </div>
+        <p class="contentText">
+            When we test the robot, it's really not a good experience to see the sensor values on the small screen.
+            That's why we are developing XControl, it can read and write the values of robots on the phone and other
+            devices by the HC-06 bluetooth module. Although there's already a lot of bluetooth controllers of MCU,
+            XControl has many unique features, for example, it will allow the users to bind any sensors they use. We
+            decide to develop the android version first and put the app on google play next summer. Please look forward
+            to it if you are interested in.
+        </p>
+        <div class="contentImageContainer">
+            <img src="../images/xControl1.jpg" alt="xControl1">
+            <p class="contentImageInfo">one of the layouts of the XControl app</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footerRow">
+        <div class="footerCol">
+            <h5 class="footerTitle">XZRT</h5>
+            <ul class="footerList">
+                <li><a href="../about.html">About us</a></li>
+                <li><a href="../contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footerDivider"></div>
+        <div class="footerCol">
+            <h5 class="footerTitle">Links</h5>
+            <ul class="footerList">
+                <li><a href="http://www.robocup.org/">RoboCup.org</a></li>
+                <li><a href="http://www.rcj.org.cn/">RCJ China</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

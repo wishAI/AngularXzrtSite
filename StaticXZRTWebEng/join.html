@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XZRT Robot Website</title>
+    <link rel="stylesheet" type="text/css" href="styles/publicStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/navigation.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/infoPage.css">
+    <link rel="stylesheet" type="text/css" href="styles/joinPage.css">
+    <script type="text/javascript" src="scripts/jquery.js" defer></script>
+    <script type="text/javascript" src="scripts/publicScript.js" defer></script>
+    <script type="text/javascript" src="scripts/joinPage.js" defer></script>
+</head>
+<body>
+<nav>
+    <div id="navLeft">
+        <a id="logo" href="index.html">
+            <img alt="logo" src="images/logo.svg">
+            <span>XZRT Robot</span>
+        </a>
+        <ul id="nav_options">
+            <li><a href="news.html">News</a></li>
+            <li><a href="races.html">Races</a></li>
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="join.html">Join us</a></li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="contentBody">
+        <h1 class="contentHeader light">Please introduce yourself to us</h1>
+        <form>
+            <div class="contentInfoBack">
+                <div class="contentInfoContainer">
+                    <div class="formLine">
+                        <label class="formTitle" for="frmName">Name: </label>
+                        <input name="name" id="frmName" type="text">
+                    </div>
+                    <div class="formLine">
+                        <label class="formTitle" for="frmClass">Class: </label>
+                        <input name="class" id="frmClass" type="text">
+                    </div>
+                    <div class="formLine">
+                        <span class="formTitle">Gender:</span>
+                        <div class="radioContainer">
+                            <div>
+                                <label for="frmGenderMale">Male</label>
+                                <input name="gender" id="frmGenderMale" type="radio" value="male">
+                            </div>
+                            <div>
+                                <label for="frmGenderFemale">Female</label>
+                                <input name="gender" id="frmGenderFemale" type="radio" value="female">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formLine">
+                        <span class="formTitle">Branch:</span>
+                        <div class="radioContainer">
+                            <div>
+                                <label for="liberalArt">Liberal Art</label>
+                                <input name="branch" id="liberalArt" type="radio" value="liberalArt">
+                            </div>
+                            <div>
+                                <label for="science">Science</label>
+                                <input name="branch" id="science" type="radio" value="science">
+                            </div>
+                            <div>
+                                <label for="notSure">Not Sure</label>
+                                <input name="branch" id="notSure" type="radio" value="notSure">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formLine">
+                        <label class="formTitle" for="frmEmail">Email: </label>
+                        <input name="email" id="frmEmail" type="email">
+                    </div>
+                    <div class="formBlock">
+                        <label for="frmSpareTime">How much spare time do you have? </label>
+                        <label for="frmSpareTime">How about your grades in school? </label>
+                        <label for="frmSpareTime">Tell us about details.</label>
+                        <textarea name="spareTime" id="frmSpareTime" rows="5"></textarea>
+                    </div>
+                    <div class="formBlock">
+                        <label for="frmExperience">Do you have any experience in robots, programming or engineering graphics? </label>
+                        <label for="frmExperience">If yes, tell us about it. </label>
+                        <label for="frmExperience">If no, tell us your opinion on robots and why do you want to join the club.</label>
+                        <textarea name="experience" id="frmExperience" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="formButtonArea">
+                <button class="formButton light" type="submit">Submit</button>
+                <button class="formButton light" type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="footerRow">
+        <div class="footerCol">
+            <h5 class="footerTitle">XZRT</h5>
+            <ul class="footerList">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footerDivider"></div>
+        <div class="footerCol">
+            <h5 class="footerTitle">Links</h5>
+            <ul class="footerList">
+                <li><a href="http://www.robocup.org/">RoboCup.org</a></li>
+                <li><a href="http://www.rcj.org.cn/">RCJ China</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

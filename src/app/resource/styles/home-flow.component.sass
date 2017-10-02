@@ -1,0 +1,46 @@
+@import "../../../assets/styles/_vars.sass"
+
+.homeFlowContainer
+    display: block
+    width: 300px
+    height: 300px
+    margin-left: 8px
+    margin-right: 8px
+    text-align: left
+    background-color: white
+    box-shadow: 0 0 $boxShadowLength $boxShadowColor
+
+.homeFlowTitle
+    font-size: 40px
+    font-weight: lighter
+    line-height: 25px
+
+.homeFlowInfo
+    margin-bottom: 40px
+    font-weight: normal
+    color: $subheaderColor
+
+.homeFlowImage
+    width: 100%
+    transition-property: filter
+    transition: 0.5s
+    transition-timing-function: ease-out
+
+.homeFlowImageHover
+    filter: brightness(120%)
+
+.homeFlowBox
+    padding-top: 20px
+    padding-left: 20px
+    padding-right: 20px
+
+.homeFlowBox h6
+    margin: 0
+    font-size: 20px
+    font-weight: normal
+    line-height: 10px
+    color: black
+
+.homeFlowBox p
+    font-size: 14px
+    color: $subheaderColor

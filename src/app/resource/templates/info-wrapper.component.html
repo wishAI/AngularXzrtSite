@@ -1,0 +1,30 @@
+<main>
+    <div class="contentBody">
+        <ng-container [ngSwitch]=pageType>
+            <h1 *ngSwitchCase="'about'" class="contentHeader light">关于我们</h1>
+            <h1 *ngSwitchCase="'contact'" class="contentHeader light">联系方式</h1>
+        </ng-container>
+        
+        
+        <div class="contentInfoBack">
+            <ng-container [ngSwitch]=pageType>
+                <div class="contentInfoContainer" *ngSwitchCase="'about'">
+                    <p class="contentText">
+                        行知机器社是上海市行知中学的社团，多年以来，我们参加Robocup Junior和其他机器人比赛并取得了许多成果。
+                    </p>
+                </div>
+                <div class="contentInfoContainer" *ngSwitchCase="'contact'">
+                    <p class="contentText">
+                        <span>邮件: </span>
+                        <span>climax0@qq.com</span>
+                    </p>
+                    <p class="contentText">
+                        <span>电话:</span>
+                        <span>+86 139-1832-1592</span>
+                    </p>
+                </div>
+            </ng-container>
+        </div>
+    
+    </div>
+</main>

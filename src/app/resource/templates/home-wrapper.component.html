@@ -1,0 +1,75 @@
+<main>
+    <div id="contentHeader">
+        <div id="headerGalleryWrapper" class="slideContainer">
+            <div *ngFor="let slidePath of slideUrls"
+                 class="slides fade">
+                <img alt="slide3" [src]=slidePath>
+            </div>
+            <div class="prev" id="btnSlidePrev">
+                <span>&#10094;</span>
+            </div>
+            <div class="next" id="btnSlideNext">
+                <span>&#10095;</span>
+            </div>
+        </div>
+        <div class="latestNews">
+            <div class="newsTitle">
+                <h2 class="light">最新资讯</h2>
+            </div>
+            <ul class="newsList">
+                <home-item *ngFor="let homeItem of homeItems"
+                           [title]=homeItem.title
+                           [query]=homeItem.query>
+                </home-item>
+            </ul>
+        </div>
+    </div>
+    <div class="homeContentBody">
+        <div class="homeResourceFlow">
+            <div class="homeFlowRow">
+                <h2 class="homeFlowTitle light">近期比赛</h2>
+                
+                <h3 class="homeFlowInfo">紧张刺激的比赛和辉煌成果</h3>
+                
+                <div class="homeFlowList">
+                    <home-flow *ngFor="let homeFlow of raceHomeFlows"
+                               class="home-flow-component"
+                               [title]=homeFlow.title
+                               [info]=homeFlow.info
+                               [coverUrl]=homeFlow.coverUrl
+                               [query]=homeFlow.query>
+                    </home-flow>
+                </div>
+            </div>
+        </div>
+        <a class="resourceGalleryLink" [routerLink]="['/join']">
+            <div id="resourceGallery" class="resourceGalleryContainer" [ngStyle]="{'background-image': 'url(' + galleryUrl + ')'}">
+                <h2 class="galleryTitle light">和我们一起</h2>
+                
+                <p class="galleryInfo">探索机器人的精彩世界</p>
+                
+                <!--<p class="galleryInfo">And, things beyond robots</p>-->
+                
+                <p class="galleryAction light">加入我们 >></p>
+            </div>
+        </a>
+        
+        <div class="homeResourceFlow">
+            <div class="homeFlowRow">
+                <h2 class="homeFlowTitle light">实验室新品</h2>
+                
+                <h3 class="homeFlowInfo">我们的研究和探索</h3>
+                
+                <div class="homeFlowList">
+                    <home-flow *ngFor="let homeFlow of techHomeFlows"
+                               class="home-flow-component"
+                               [title]=homeFlow.title
+                               [info]=homeFlow.info
+                               [coverUrl]=homeFlow.coverUrl
+                               [query]=homeFlow.query>
+                    </home-flow>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "angular-url-builder.js",
+  "sourceRoot": "",
+  "sources": [
+    "angular-url-builder.coffee"
+  ],
+  "names": [],
+  "mappings": ";AACA;EAAA,MAAM,CAAC,YAAP,GAAsB;IAkBlB,iBAAA,EAAmB,SAAC,MAAD;aAAY,UAAU,CAAC,iBAAX,GAA+B;IAA3C,CAlBD;;AAAtB"
+}

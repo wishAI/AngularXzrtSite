@@ -1,0 +1,14 @@
+<nav>
+    <div id="navLeft">
+        <a id="logo" [routerLink]="['/']" [queryParams]="{ lang: lang }">
+            <img alt="logo" src="assets/images/logo.svg">
+            <span>行知机器人社</span>
+        </a>
+        <ul id="nav_options">
+            <li><a md-button [routerLink]="['/menu']" [queryParams]="{ category: 'news', lang: lang }">资讯</a></li>
+            <li><a md-button [routerLink]="['/menu']" [queryParams]="{ category: 'race', lang: lang }">比赛</a></li>
+            <li><a md-button [routerLink]="['/menu']" [queryParams]="{ category: 'tech', lang: lang }">实验室</a></li>
+            <li><a md-button [routerLink]="['/join']">加入我们</a></li>
+        </ul>
+    </div>
+</nav>

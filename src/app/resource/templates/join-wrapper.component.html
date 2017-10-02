@@ -1,0 +1,70 @@
+<main>
+    <div class="contentBody">
+        <h1 class="contentHeader light">请告诉我们您的相关信息</h1>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" novalidate>
+            <div class="contentInfoBack">
+                <div class="contentInfoContainer">
+                    <div class="formLine">
+                        <label class="formTitle" for="frmName">名字: </label>
+                        <input name="name" id="frmName" type="text" ngModel>
+                    </div>
+                    <div class="formLine">
+                        <label class="formTitle" for="frmClass">班级: </label>
+                        <input name="grade" id="frmClass" type="text" ngModel>
+                    </div>
+                    <div class="formLine">
+                        <span class="formTitle">性别:</span>
+                        <div class="radioContainer">
+                            <div>
+                                <label for="frmGenderMale">男</label>
+                                <input name="gender" id="frmGenderMale" type="radio" value="male" ngModel>
+                            </div>
+                            <div>
+                                <label for="frmGenderFemale">女</label>
+                                <input name="gender" id="frmGenderFemale" type="radio" value="female" ngModel>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formLine">
+                        <span class="formTitle">分科:</span>
+                        <div class="radioContainer">
+                            <div>
+                                <label for="liberalArt">文科</label>
+                                <input name="branch" id="liberalArt" type="radio" value="liberalArt" ngModel>
+                            </div>
+                            <div>
+                                <label for="science">理科</label>
+                                <input name="branch" id="science" type="radio" value="science" ngModel>
+                            </div>
+                            <div>
+                                <label for="notSure">不确定</label>
+                                <input name="branch" id="notSure" type="radio" value="notSure" ngModel>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formLine">
+                        <label class="formTitle" for="frmEmail">邮件: </label>
+                        <input name="email" id="frmEmail" type="email" ngModel>
+                    </div>
+                    <div class="formBlock">
+                        <label for="frmSpareTime">您平时有多少空闲时间？ </label>
+                        <label for="frmSpareTime">您的学校成绩如何？ </label>
+                        <label for="frmSpareTime">请告诉我们相关细节。</label>
+                        <textarea name="spareTime" id="frmSpareTime" rows="5" ngModel></textarea>
+                    </div>
+                    <div class="formBlock">
+                        <label for="frmExperience">请问您有机器人，编程，工程制图等方面的经验吗？</label>
+                        <label for="frmExperience">如果有，请告诉我们相关情况。</label>
+                        <label for="frmExperience">如果没有，请告诉我们您对机器人的想法和想要加入机器人社的原因。</label>
+                        <textarea name="experience" id="frmExperience" rows="5" ngModel></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="formButtonArea">
+                <button class="formButton light">提交</button>
+                <button class="formButton light" type="reset">重置</button>
+            </div>
+        </form>
+    </div>
+</main>
+

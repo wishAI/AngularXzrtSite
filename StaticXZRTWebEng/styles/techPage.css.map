@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY;EACV,gBAAgB,EAAE,8BAA8B",
+"sources": ["techPage.sass"],
+"names": [],
+"file": "techPage.css"
+}

@@ -1,0 +1,99 @@
+@import "var/var.sass"
+
+form
+  display: flex
+  flex-direction: column
+
+.contentInfoBack
+  margin-bottom: 0
+
+.formLine
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  max-width: 500px
+  margin-bottom: 20px
+
+.formLine > label
+  display: block
+
+.formLine > span
+  display: block
+
+.formTitle
+  display: block
+  font-size: 22px
+
+input[type = "text"], input[type = "email"]
+  display: block
+  width: 400px
+  border-top: none
+  border-left: none
+  border-right: none
+  border-bottom: solid 2px $separatorGrey
+  font-size: 22px
+
+input[type = "radio"]
+  display: none
+
+.radioContainer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  width: 400px
+
+.radioContainer label
+  display: block
+  height: 24px
+  margin-left: 5px
+  margin-right: 5px
+  padding-left: 14px
+  padding-right: 14px
+  font-size: 20px
+  line-height: 24px
+  border-radius: 12px
+
+.radioContainer label:hover
+  background-color: $mainColor_transparent
+
+.radioChecked
+  background-color: $mainColor
+  color: white
+
+.formBlock
+  margin-top: 30px
+
+.formBlock > label
+  display: block
+  margin-bottom: 4px
+  font-size: 18px
+
+textarea
+  box-sizing: border-box
+  width: 100%
+  padding: 10px
+  font-size: 18px
+  border: solid 2px $separatorGrey
+
+.formButtonArea
+  display: flex
+  position: relative
+  flex-direction: row
+  justify-content: center
+  width: 650px
+  height: 70px
+  margin-left: auto
+  margin-right: auto
+
+.formButton
+  width: 50%
+  border: none
+  background-color: transparent
+  font-size: 35px
+  color: $navTextColor
+  transition: background-color 0.4s ease-out
+  cursor: pointer
+
+.formButton:hover
+  background-color: $boxHoverColor

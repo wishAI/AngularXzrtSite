@@ -1,0 +1,26 @@
+<main>
+    <div class="contentBody">
+        <div class="optionFlowContainer">
+            <menu-flow *ngFor="let menuFlow of menuFlows"
+                       [title]=menuFlow.title
+                       [createDate]=menuFlow.createDate
+                       [coverUrl]=menuFlow.coverUrl
+                       [query]=menuFlow.query>
+            </menu-flow>
+        </div>
+        <div class="optionListContainer">
+            <div class="optionList">
+                <menu-item *ngFor="let menuItem of menuItems"
+                           [title]=menuItem.title
+                           [createDate]=menuItem.createDate
+                           [query]=menuItem.query>
+                </menu-item>
+            </div>
+        </div>
+        <div class="pageControlContainer">
+            <button md-button id="btnPrev" class="btnPageControl"><span class="light">< 前一页</span></button>
+            <span class="pageControlInfo light">1</span>
+            <button md-button id="btnNext" class="btnPageControl"><span class="light">后一页 ></span></button>
+        </div>
+    </div>
+</main>

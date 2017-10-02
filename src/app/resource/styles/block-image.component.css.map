@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,sBAAsB;EAClB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;;AAEvB,0BAA0B;EACtB,SAAS,EAAE,IAAI;;AAEnB,iBAAiB;EACb,SAAS,EAAE,IAAI;EACf,KAAK,ECHO,OAAO",
+"sources": ["block-image.component.sass","../../../assets/styles/_vars.sass"],
+"names": [],
+"file": "block-image.component.css"
+}

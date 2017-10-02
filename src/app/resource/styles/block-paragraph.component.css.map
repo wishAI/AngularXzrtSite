@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,YAAY;EACR,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,GAAG;EACjB,WAAW,EAAE,IAAI",
+"sources": ["block-paragraph.component.sass"],
+"names": [],
+"file": "block-paragraph.component.css"
+}

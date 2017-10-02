@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "xzrt-config.js",
+  "sourceRoot": "",
+  "sources": [
+    "xzrt-config.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAM,CAAC,UAAP,GAAoB;IAEhB,mBAAA,EAAqB,iBAFL;IAGhB,iBAAA,EAAmB,eAHH;IAIhB,gBAAA,EAAkB,cAJF;IAMhB,kBAAA,EAAoB,qBANJ;IAOhB,eAAA,EAAiB,kBAPD;IAUhB,iBAAA,EAAmB,2BAVH;;AAApB"
+}

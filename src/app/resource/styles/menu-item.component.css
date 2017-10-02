@@ -1,0 +1,28 @@
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
+  transition: background-color 0.2s ease-out; }
+
+.optionWhite {
+  background-color: white; }
+
+.option:hover {
+  background-color: rgba(170, 170, 170, 0.8);
+  cursor: pointer; }
+
+.option span {
+  display: block; }
+
+.optionInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #666666; }
+
+/*# sourceMappingURL=menu-item.component.css.map */

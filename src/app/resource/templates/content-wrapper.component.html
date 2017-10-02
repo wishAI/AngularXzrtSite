@@ -1,0 +1,43 @@
+<main>
+    <div class="headGalleryContainer" id="headGalleryContainer">
+        <div class="headGallery scrollblock" id="headGallery" [ngStyle]="{'background-image': 'url(' + galleryUrl + ')'}"></div>
+    </div>
+    <!-- make the a gallery on the top -->
+    <!-- main content -->
+    <div class="contentBody scrollblock" id="contentBody">
+        <h1 class="contentHeader light">{{ title }}</h1>
+        <div class="contentInfoContainer">
+            <div class="contentInfoLeft">
+                <div class="contentInfo">
+                    <img alt="icoDate" src="assets/icons/icoDate.svg">
+                    <span>{{ createDate }}</span>
+                </div>
+                <div class="contentInfo">
+                    <img alt="icoAuthor" src="assets/icons/icoAuthor.svg">
+                    <span>{{ author }}</span>
+                </div>
+            </div>
+            <div class="contentInfoRight">
+                <div class="contentInfo" id="btnPrint">
+                    <img alt="icoPrint" src="assets/icons/icoPrint.svg">
+                    <span>Print</span>
+                </div>
+            </div>
+        </div>
+        <ng-container *ngFor="let block of blocks">
+            <ng-container [ngSwitch]=block._type>
+                <block-image
+                    *ngSwitchCase="'image'"
+                    [info]=block.info
+                    [imageUrl]=block.imageUrl>
+                </block-image>
+                <block-paragraph
+                    *ngSwitchCase="'paragraph'"
+                    class="content-start"
+                    [textUrl]=block.textUrl>
+                </block-paragraph>
+            </ng-container>
+        </ng-container>
+        
+    </div>
+</main>

@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/scripts/publicScript.js" />
+        <item url="file://$PROJECT_DIR$/scripts/contentPage.js" />
+        <item url="file://$PROJECT_DIR$/scripts/homePage.js" />
+        <item url="file://$PROJECT_DIR$/scripts/joinPage.js" />
+        <item url="file://$PROJECT_DIR$/scripts/menuPage.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/scripts/publicScript.js" />
+      <root url="file://$PROJECT_DIR$/scripts/contentPage.js" />
+      <root url="file://$PROJECT_DIR$/scripts/homePage.js" />
+      <root url="file://$PROJECT_DIR$/scripts/joinPage.js" />
+      <root url="file://$PROJECT_DIR$/scripts/menuPage.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

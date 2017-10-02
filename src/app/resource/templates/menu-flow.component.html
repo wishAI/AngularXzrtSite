@@ -1,0 +1,12 @@
+<a [routerLink]="['/article']" [queryParams]=query>
+    <div class="optionFlow">
+        <img alt="flow1" [src]=coverUrl>
+        <div class="optionFlowBox">
+            <span>{{ title }}</span>
+            <div class="optionFlowInfo">
+                <!--<span>Hao Wang</span>-->
+                <span>{{ createDate }}</span>
+            </div>
+        </div>
+    </div>
+</a>

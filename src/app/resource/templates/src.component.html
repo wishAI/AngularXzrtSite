@@ -1,0 +1,5 @@
+<span class="src-type" hidden>{{ srcType }}</span>
+<span class="src-url" hidden>{{ srcUrl }}</span>
+<ng-container [ngSwitch]=srcType>
+    <pre>{{ text }}</pre>
+</ng-container>
